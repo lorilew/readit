@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import datetime
 from django.db import models
-
+from django.core.urlresolvers import reverse
 # Create your models here.
 class Book(models.Model):
     title = models.CharField(max_length=150)
@@ -28,3 +28,6 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('author-detail', kwargs={'pk', self.pk})
