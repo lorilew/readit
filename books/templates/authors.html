@@ -2,7 +2,9 @@
 {% block content %}
 
     {% for author in authors %}
-      <h2><a href="{% url 'author-detail' book.pk %}">{{ author.name }}</a></h2>
+      <h2>
+          {{ author.name }}
+      </h2>
     {% endfor %}
 
 {% endblock %}
