@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-
+import datetime
 from django.db import models
 
 # Create your models here.
@@ -18,7 +18,7 @@ class Book(models.Model):
 
     def save(self, *args, **kwargs):
         if (self.review and self.date_reviewed is None):
-            self.date_reviewed = now()
+            self.date_reviewed = datetime.datetime.now()
         super(Book, self).save(*args, **kwargs)
 
 class Author(models.Model):
