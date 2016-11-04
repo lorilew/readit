@@ -4,6 +4,7 @@
     <list default="true" id="97de3d22-6228-4c0a-b105-27d4a6c2a27c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/tests/test_views.py" afterPath="$PROJECT_DIR$/books/tests/test_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readit/settings.py" afterPath="$PROJECT_DIR$/readit/settings.py" />
     </list>
     <ignored path="readit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="test_views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/books/tests/test_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="497">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -42,6 +43,11 @@
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
+                <marker date="1478261895000" expanded="true" signature="131:936" ph="..." />
+                <marker date="1478261895000" expanded="true" signature="152:391" ph="..." />
+                <marker date="1478261895000" expanded="true" signature="416:503" ph="..." />
+                <marker date="1478261895000" expanded="true" signature="541:614" ph="..." />
+                <marker date="1478261895000" expanded="true" signature="767:936" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,6 +78,7 @@
         <option value="$PROJECT_DIR$/books/tests/tests.py" />
         <option value="$PROJECT_DIR$/books/factories.py" />
         <option value="$PROJECT_DIR$/books/tests/test_models.py" />
+        <option value="$PROJECT_DIR$/readit/settings.py" />
         <option value="$PROJECT_DIR$/books/tests/test_views.py" />
       </list>
     </option>
@@ -449,7 +456,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1276" y="25" width="1030" height="1057" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15758176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -460,7 +467,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34504792" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34504792" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -510,7 +517,7 @@
         <state relative-caret-position="150">
           <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,7 +567,7 @@
         <state relative-caret-position="317">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding>
-            <element signature="e#640#672#0" expanded="true" />
+            <element signature="e#640#672#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,20 +622,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readit/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books/tests/test_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+            <marker date="1478261895000" expanded="true" signature="131:936" ph="..." />
+            <marker date="1478261895000" expanded="true" signature="152:391" ph="..." />
+            <marker date="1478261895000" expanded="true" signature="416:503" ph="..." />
+            <marker date="1478261895000" expanded="true" signature="541:614" ph="..." />
+            <marker date="1478261895000" expanded="true" signature="767:936" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/books/tests/test_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="497">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>

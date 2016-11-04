@@ -1,7 +1,8 @@
 from django.test import TestCase
 from django.core.urlresolvers import resolve, reverse
-from books.views import list_books
-from books.factories import AuthorFactory, BookFactory, ReviewFactory
+from books.views import list_books, ReviewList
+from books.models import Book
+from books.factories import AuthorFactory, BookFactory, ReviewFactory, UserFactory
 
 class TestListBooks(TestCase):
     def test_list_books_url(self):
@@ -22,3 +23,48 @@ class TestListBooks(TestCase):
         books = list(response.context['books'])
         self.assertEqual(books_with_reviews, books)
         self.assertNotEqual(books_without_reviews, books)
+
+class testReviewList(TestCase):
+    def setUp(self):
+        self.user = UserFactory(username="test")
+        self.author = AuthorFactory()
+
+    def tearDown(self):
+        self.user.delete()
+
+    def test_review_url(self):
+        url = resolve('/review/')
+        self.assertEqual(url.func.__name__, ReviewList.__name__)
+
+    def test_authentication_control(self):
+        # check unauthenticated users cannot view page
+        response = self.client.get(reverse('review-books'))
+        self.assertEqual(302, response.status_code)
+
+        self.client.login(username="test", password="test")
+        response = self.client.get(reverse('review-books'))
+        self.assertEqual(200, response.status_code)
+
+        # While we're logged in, confirm we're using the correct template
+        self.assertTemplateUsed(response, 'list-to-review.html')
+
+    def test_review_list_returns_books_to_review(self):
+        books_without_reviews = BookFactory.create_batch(2, authors=[self.author, ])
+
+        self.client.login(username="test", password="test")
+        response = self.client.get(reverse('review-books'))
+        books = list(response.context['books'])
+        self.assertEqual(books_without_reviews, books)
+
+    def test_can_create_new_book(self):
+        self.client.login(username="test", password="test")
+        response = self.client.post(
+            reverse('review-books'),
+            data={
+                'title': 'My Brand New Book',
+                'authors': [self.author.pk, ],
+                'reviewed_by': self.user.pk
+            },
+        )
+
+        self.assertIsNotNone(Book.objects.get(title="My Brand New Book"))
