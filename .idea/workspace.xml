@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97de3d22-6228-4c0a-b105-27d4a6c2a27c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/factories.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/tests/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/books/tests.py" afterPath="$PROJECT_DIR$/books/tests/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/books/tests/tests.py" afterPath="$PROJECT_DIR$/books/tests/test_models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="readit.iws" />
@@ -77,20 +75,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/books/tests/tests.py">
+      <file leaf-file-name="test_models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/books/tests/test_models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factories.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="factories.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/books/factories.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="765">
               <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -123,6 +123,7 @@
         <option value="$PROJECT_DIR$/readit/templates/base.html" />
         <option value="$PROJECT_DIR$/books/tests/tests.py" />
         <option value="$PROJECT_DIR$/books/factories.py" />
+        <option value="$PROJECT_DIR$/books/tests/test_models.py" />
       </list>
     </option>
   </component>
@@ -324,7 +325,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="readit" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/books/tests/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/books/tests/test_models.py" />
       <option name="CLASS_NAME" value="DemoTest" />
       <option name="METHOD_NAME" value="test_addition" />
       <option name="FOLDER_NAME" value="" />
@@ -655,20 +656,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books/tests/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books/factories.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="765">
           <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/tests/test_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
