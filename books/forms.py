@@ -1,5 +1,6 @@
 from django import forms
 from .models import Book
+from django.core.exceptions import ObjectDoesNotExist
 
 class ReviewForm(forms.Form):
 	"""
@@ -22,6 +23,23 @@ class ReviewForm(forms.Form):
 	)
 
 class BookForm(forms.ModelForm):
-    class Meta:
-        model = Book
-        fields = ['title', 'authors']
+	class Meta:
+		model = Book
+		fields = ['title', 'authors']
+
+	def clean(self):
+		# Super the clean method to maintain main validation and error messages
+		super(BookForm, self).clean()
+
+		try:
+			title = self.cleaned_data.get('title')
+			authors = self.cleaned_data.get('authors')
+			book = Book.objects.get(title=title, authors=authors)
+
+			raise forms.ValidationError(
+				'The book {} by {} already exists'.format(title, book.list_authors()),
+				code='bookexists'
+			)
+
+		except Book.DoesNotExist:
+			return self.cleaned_data
